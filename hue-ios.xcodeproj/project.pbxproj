@@ -12,6 +12,18 @@
 		C9E8EE6F1DB5D012005BEEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */; };
 		C9E8EE711DB5D012005BEEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE701DB5D012005BEEBA /* Assets.xcassets */; };
 		C9E8EE741DB5D012005BEEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */; };
+		C9E8EE861DB5D4AE005BEEBA /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */; };
+		C9E8EE871DB5D4AE005BEEBA /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */; };
+		C9E8EE941DB5D4CE005BEEBA /* berlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */; };
+		C9E8EE951DB5D4CE005BEEBA /* club.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */; };
+		C9E8EE961DB5D4CE005BEEBA /* glotze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */; };
+		C9E8EE971DB5D4CE005BEEBA /* markt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */; };
+		C9E8EE981DB5D4CE005BEEBA /* melone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */; };
+		C9E8EE991DB5D4CE005BEEBA /* museum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */; };
+		C9E8EE9A1DB5D4CE005BEEBA /* schnee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */; };
+		C9E8EE9B1DB5D4CE005BEEBA /* strand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE911DB5D4CE005BEEBA /* strand.jpg */; };
+		C9E8EE9C1DB5D4CE005BEEBA /* streetart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */; };
+		C9E8EE9D1DB5D4CE005BEEBA /* xberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +34,21 @@
 		C9E8EE701DB5D012005BEEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E8EE731DB5D012005BEEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9E8EE751DB5D012005BEEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E8EE811DB5D4AE005BEEBA /* hue-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hue-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9E8EE821DB5D4AE005BEEBA /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = ColorCube/CCColorCube.h; sourceTree = "<group>"; };
+		C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCColorCube.m; path = ColorCube/CCColorCube.m; sourceTree = "<group>"; };
+		C9E8EE841DB5D4AE005BEEBA /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = ColorCube/CCLocalMaximum.h; sourceTree = "<group>"; };
+		C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = ColorCube/CCLocalMaximum.m; sourceTree = "<group>"; };
+		C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = berlin.jpg; path = Images/berlin.jpg; sourceTree = "<group>"; };
+		C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = club.jpg; path = Images/club.jpg; sourceTree = "<group>"; };
+		C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = glotze.jpg; path = Images/glotze.jpg; sourceTree = "<group>"; };
+		C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = markt.jpg; path = Images/markt.jpg; sourceTree = "<group>"; };
+		C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = melone.jpg; path = Images/melone.jpg; sourceTree = "<group>"; };
+		C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = museum.jpg; path = Images/museum.jpg; sourceTree = "<group>"; };
+		C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = schnee.jpg; path = Images/schnee.jpg; sourceTree = "<group>"; };
+		C9E8EE911DB5D4CE005BEEBA /* strand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = strand.jpg; path = Images/strand.jpg; sourceTree = "<group>"; };
+		C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = streetart.jpg; path = Images/streetart.jpg; sourceTree = "<group>"; };
+		C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xberg.jpg; path = Images/xberg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +81,45 @@
 		C9E8EE681DB5D012005BEEBA /* hue-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C9E8EE891DB5D4C6005BEEBA /* Images */,
+				C9E8EE881DB5D4B7005BEEBA /* ColorCube */,
 				C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */,
 				C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */,
 				C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */,
 				C9E8EE701DB5D012005BEEBA /* Assets.xcassets */,
 				C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */,
 				C9E8EE751DB5D012005BEEBA /* Info.plist */,
+				C9E8EE811DB5D4AE005BEEBA /* hue-ios-Bridging-Header.h */,
 			);
 			path = "hue-ios";
+			sourceTree = "<group>";
+		};
+		C9E8EE881DB5D4B7005BEEBA /* ColorCube */ = {
+			isa = PBXGroup;
+			children = (
+				C9E8EE821DB5D4AE005BEEBA /* CCColorCube.h */,
+				C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */,
+				C9E8EE841DB5D4AE005BEEBA /* CCLocalMaximum.h */,
+				C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */,
+			);
+			name = ColorCube;
+			sourceTree = "<group>";
+		};
+		C9E8EE891DB5D4C6005BEEBA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */,
+				C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */,
+				C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */,
+				C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */,
+				C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */,
+				C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */,
+				C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */,
+				C9E8EE911DB5D4CE005BEEBA /* strand.jpg */,
+				C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */,
+				C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +154,7 @@
 				TargetAttributes = {
 					C9E8EE651DB5D012005BEEBA = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +182,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E8EE991DB5D4CE005BEEBA /* museum.jpg in Resources */,
+				C9E8EE961DB5D4CE005BEEBA /* glotze.jpg in Resources */,
+				C9E8EE981DB5D4CE005BEEBA /* melone.jpg in Resources */,
 				C9E8EE741DB5D012005BEEBA /* LaunchScreen.storyboard in Resources */,
+				C9E8EE971DB5D4CE005BEEBA /* markt.jpg in Resources */,
+				C9E8EE951DB5D4CE005BEEBA /* club.jpg in Resources */,
+				C9E8EE941DB5D4CE005BEEBA /* berlin.jpg in Resources */,
+				C9E8EE9B1DB5D4CE005BEEBA /* strand.jpg in Resources */,
+				C9E8EE9A1DB5D4CE005BEEBA /* schnee.jpg in Resources */,
 				C9E8EE711DB5D012005BEEBA /* Assets.xcassets in Resources */,
+				C9E8EE9C1DB5D4CE005BEEBA /* streetart.jpg in Resources */,
 				C9E8EE6F1DB5D012005BEEBA /* Main.storyboard in Resources */,
+				C9E8EE9D1DB5D4CE005BEEBA /* xberg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E8EE861DB5D4AE005BEEBA /* CCColorCube.m in Sources */,
 				C9E8EE6C1DB5D012005BEEBA /* HueViewController.swift in Sources */,
+				C9E8EE871DB5D4AE005BEEBA /* CCLocalMaximum.m in Sources */,
 				C9E8EE6A1DB5D012005BEEBA /* HueAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,10 +331,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hue.hue-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/hue-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hue.hue-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/hue-ios-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

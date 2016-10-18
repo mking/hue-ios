@@ -18,18 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hue!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZH-hf-aFi">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0w7-5n-4Wg">
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LOu-3o-ygL">
+                                        <segments>
+                                            <segment title="Picture"/>
+                                            <segment title="Color Picker"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="tapPatternType:" destination="BYZ-38-t0r" eventType="valueChanged" id="AKY-N2-J2c"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hue!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZH-hf-aFi">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kln-gg-Jw1">
+                                        <state key="normal" title="ColorCube"/>
+                                        <connections>
+                                            <action selector="tapColorCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftO-Ua-USD"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-KX-Rsb">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="YuH-Pj-QEE"/>
+                                            <constraint firstAttribute="height" constant="200" id="dqr-yx-gdl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lZH-hf-aFi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrD-7Y-PSj"/>
-                            <constraint firstItem="lZH-hf-aFi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oeT-oj-412"/>
+                            <constraint firstItem="0w7-5n-4Wg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SR7-KH-qoY"/>
+                            <constraint firstItem="0w7-5n-4Wg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pcf-8t-nUH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorView" destination="QYc-KX-Rsb" id="YtI-Ae-c93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
