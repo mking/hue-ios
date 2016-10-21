@@ -9,7 +9,7 @@
         <!--Pattern Picker-->
         <scene sceneID="NSw-oJ-S3x">
             <objects>
-                <viewController id="QDu-qg-Sct" customClass="PatternController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QDu-qg-Sct" customClass="PatternController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nph-AN-fsS"/>
                         <viewControllerLayoutGuide type="bottom" id="SSa-QO-epx"/>
@@ -25,7 +25,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olg-LY-idv" customClass="PatternResultView" customModule="LightDJ" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olg-LY-idv" customClass="PatternResultView" customModule="hue_ios" customModuleProvider="target">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Q4p-Bn-P3y"/>
@@ -92,7 +92,7 @@
         <!--Music List-->
         <scene sceneID="840-OF-7oB">
             <objects>
-                <viewController id="aXa-GG-BTH" customClass="MusicListViewController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aXa-GG-BTH" customClass="MusicListViewController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AAO-qK-61K"/>
                         <viewControllerLayoutGuide type="bottom" id="NF8-OZ-FKR"/>
@@ -116,7 +116,7 @@
                                             <constraint firstAttribute="height" constant="393" id="qeX-6P-yNS"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="1dh-3S-fO3" customClass="MusicListCellTableViewCell" customModule="LightDJ" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="1dh-3S-fO3" customClass="MusicListCellTableViewCell" customModule="hue_ios" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1dh-3S-fO3" id="5St-4Z-NO8">
@@ -151,8 +151,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QDu-qg-Sct" kind="relationship" relationship="viewControllers" id="qhC-S0-PYM"/>
                         <segue destination="aXa-GG-BTH" kind="relationship" relationship="viewControllers" id="mwy-zz-sw7"/>
+                        <segue destination="QDu-qg-Sct" kind="relationship" relationship="viewControllers" id="qhC-S0-PYM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3S-zK-k3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +162,7 @@
         <!--Pattern Photo Controller-->
         <scene sceneID="jV6-Uv-lRU">
             <objects>
-                <viewController id="sSc-8P-nhY" customClass="PatternPhotoController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sSc-8P-nhY" customClass="PatternPhotoController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wos-M1-rlh"/>
                         <viewControllerLayoutGuide type="bottom" id="ItH-uP-iSh"/>
@@ -230,7 +230,7 @@
         <!--Pattern Color Controller-->
         <scene sceneID="UH6-wJ-1ZP">
             <objects>
-                <viewController id="mbc-xX-yr6" customClass="PatternColorController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mbc-xX-yr6" customClass="PatternColorController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EDb-im-Qld"/>
                         <viewControllerLayoutGuide type="bottom" id="KRH-01-i7F"/>
