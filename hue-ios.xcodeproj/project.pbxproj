@@ -7,195 +7,253 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62D76761A98C5E644672FA31 /* Pods_hue_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */; };
-		C293AAA81DB9DA3D00D28788 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */; };
-		C293AAAA1DB9DBB700D28788 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAA91DB9DBB700D28788 /* Music.swift */; };
-		C293AAAE1DB9F65C00D28788 /* MusicListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */; };
-		C9E8EE6A1DB5D012005BEEBA /* HueAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */; };
-		C9E8EE6C1DB5D012005BEEBA /* HueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */; };
-		C9E8EE6F1DB5D012005BEEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */; };
-		C9E8EE711DB5D012005BEEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE701DB5D012005BEEBA /* Assets.xcassets */; };
-		C9E8EE741DB5D012005BEEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */; };
-		C9E8EE861DB5D4AE005BEEBA /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */; };
-		C9E8EE871DB5D4AE005BEEBA /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */; };
-		C9E8EE941DB5D4CE005BEEBA /* berlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */; };
-		C9E8EE951DB5D4CE005BEEBA /* club.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */; };
-		C9E8EE961DB5D4CE005BEEBA /* glotze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */; };
-		C9E8EE971DB5D4CE005BEEBA /* markt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */; };
-		C9E8EE981DB5D4CE005BEEBA /* melone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */; };
-		C9E8EE991DB5D4CE005BEEBA /* museum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */; };
-		C9E8EE9A1DB5D4CE005BEEBA /* schnee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */; };
-		C9E8EE9B1DB5D4CE005BEEBA /* strand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE911DB5D4CE005BEEBA /* strand.jpg */; };
-		C9E8EE9C1DB5D4CE005BEEBA /* streetart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */; };
-		C9E8EE9D1DB5D4CE005BEEBA /* xberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */; };
+		1CEDFD4EB2E09000730A3890 /* Pods_hue_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE1B95E944CCC1DAB85D7 /* Pods_hue_ios.framework */; };
+		C90DE5191DB9FFD1005C2DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90DE5181DB9FFD1005C2DAB /* Assets.xcassets */; };
+		C90DE51B1DB9FFD6005C2DAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51A1DB9FFD6005C2DAB /* Info.plist */; };
+		C90DE5201DB9FFE0005C2DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51C1DB9FFE0005C2DAB /* LaunchScreen.storyboard */; };
+		C90DE5211DB9FFE0005C2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51E1DB9FFE0005C2DAB /* Main.storyboard */; };
+		C90DE5241DB9FFE8005C2DAB /* HueAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */; };
+		C90DE5281DB9FFFB005C2DAB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5251DB9FFFB005C2DAB /* Music.swift */; };
+		C90DE5291DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */; };
+		C90DE52A1DB9FFFB005C2DAB /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */; };
+		C90DE5301DBA0002005C2DAB /* PatternColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52B1DBA0002005C2DAB /* PatternColorController.swift */; };
+		C90DE5311DBA0002005C2DAB /* PatternController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52C1DBA0002005C2DAB /* PatternController.swift */; };
+		C90DE5321DBA0002005C2DAB /* PatternPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52D1DBA0002005C2DAB /* PatternPhotoController.swift */; };
+		C90DE5331DBA0002005C2DAB /* PatternPickerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52E1DBA0002005C2DAB /* PatternPickerType.swift */; };
+		C90DE5341DBA0002005C2DAB /* PatternResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52F1DBA0002005C2DAB /* PatternResultView.swift */; };
+		C90DE5391DBA000A005C2DAB /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5361DBA000A005C2DAB /* CCColorCube.m */; };
+		C90DE53A1DBA000A005C2DAB /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5381DBA000A005C2DAB /* CCLocalMaximum.m */; };
+		C90DE54B1DBA0013005C2DAB /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE53C1DBA0013005C2DAB /* HRBrightnessCursor.m */; };
+		C90DE54C1DBA0013005C2DAB /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE53E1DBA0013005C2DAB /* HRBrightnessSlider.m */; };
+		C90DE54D1DBA0013005C2DAB /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5401DBA0013005C2DAB /* HRColorCursor.m */; };
+		C90DE54E1DBA0013005C2DAB /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5421DBA0013005C2DAB /* HRColorInfoView.m */; };
+		C90DE54F1DBA0013005C2DAB /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5441DBA0013005C2DAB /* HRColorMapView.m */; };
+		C90DE5501DBA0013005C2DAB /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5461DBA0013005C2DAB /* HRColorPickerView.m */; };
+		C90DE5511DBA0013005C2DAB /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5481DBA0013005C2DAB /* HRHSVColorUtil.m */; };
+		C90DE5521DBA0013005C2DAB /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE54A1DBA0013005C2DAB /* UIImage+CoreGraphics.m */; };
+		C90DE5541DBA00C5005C2DAB /* BEMCheckBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hue_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
-		C293AAA91DB9DBB700D28788 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListCellTableViewCell.swift; sourceTree = "<group>"; };
-		C9E8EE661DB5D012005BEEBA /* hue-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hue-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAppDelegate.swift; sourceTree = "<group>"; };
-		C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueViewController.swift; sourceTree = "<group>"; };
-		C9E8EE6E1DB5D012005BEEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C9E8EE701DB5D012005BEEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9E8EE731DB5D012005BEEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C9E8EE751DB5D012005BEEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9E8EE811DB5D4AE005BEEBA /* hue-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hue-ios-Bridging-Header.h"; sourceTree = "<group>"; };
-		C9E8EE821DB5D4AE005BEEBA /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = ColorCube/CCColorCube.h; sourceTree = "<group>"; };
-		C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCColorCube.m; path = ColorCube/CCColorCube.m; sourceTree = "<group>"; };
-		C9E8EE841DB5D4AE005BEEBA /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = ColorCube/CCLocalMaximum.h; sourceTree = "<group>"; };
-		C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = ColorCube/CCLocalMaximum.m; sourceTree = "<group>"; };
-		C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = berlin.jpg; path = Images/berlin.jpg; sourceTree = "<group>"; };
-		C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = club.jpg; path = Images/club.jpg; sourceTree = "<group>"; };
-		C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = glotze.jpg; path = Images/glotze.jpg; sourceTree = "<group>"; };
-		C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = markt.jpg; path = Images/markt.jpg; sourceTree = "<group>"; };
-		C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = melone.jpg; path = Images/melone.jpg; sourceTree = "<group>"; };
-		C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = museum.jpg; path = Images/museum.jpg; sourceTree = "<group>"; };
-		C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = schnee.jpg; path = Images/schnee.jpg; sourceTree = "<group>"; };
-		C9E8EE911DB5D4CE005BEEBA /* strand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = strand.jpg; path = Images/strand.jpg; sourceTree = "<group>"; };
-		C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = streetart.jpg; path = Images/streetart.jpg; sourceTree = "<group>"; };
-		C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xberg.jpg; path = Images/xberg.jpg; sourceTree = "<group>"; };
-		E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.release.xcconfig"; sourceTree = "<group>"; };
+		099EB003C51E07CF2AA8FB3F /* Pods-hue-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.release.xcconfig"; sourceTree = "<group>"; };
+		364DBDBA8ADE1A669EA02D17 /* Pods_LightDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DE1B95E944CCC1DAB85D7 /* Pods_hue_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hue_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52D5B8A5A440E546DD31F07 /* Pods-LightDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightDJ/Pods-LightDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		C570C5B372CD26D06DB48A32 /* Pods-hue-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		C90DE48A1DB9CC80005C2DAB /* hue-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hue-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90DE5181DB9FFD1005C2DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "hue-ios/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		C90DE51A1DB9FFD6005C2DAB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "hue-ios/Info.plist"; sourceTree = SOURCE_ROOT; };
+		C90DE51D1DB9FFE0005C2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "hue-ios/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		C90DE51F1DB9FFE0005C2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "hue-ios/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		C90DE5221DB9FFE8005C2DAB /* Hue-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hue-Bridging-Header.h"; path = "hue-ios/Main/Hue-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueAppDelegate.swift; path = "hue-ios/Main/HueAppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE5251DB9FFFB005C2DAB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Music.swift; path = "hue-ios/MusicList/Music.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListCellTableViewCell.swift; path = "hue-ios/MusicList/MusicListCellTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListViewController.swift; path = "hue-ios/MusicList/MusicListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE52B1DBA0002005C2DAB /* PatternColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternColorController.swift; path = "hue-ios/PatternPicker/PatternColorController.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE52C1DBA0002005C2DAB /* PatternController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternController.swift; path = "hue-ios/PatternPicker/PatternController.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE52D1DBA0002005C2DAB /* PatternPhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternPhotoController.swift; path = "hue-ios/PatternPicker/PatternPhotoController.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE52E1DBA0002005C2DAB /* PatternPickerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternPickerType.swift; path = "hue-ios/PatternPicker/PatternPickerType.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE52F1DBA0002005C2DAB /* PatternResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternResultView.swift; path = "hue-ios/PatternPicker/PatternResultView.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE5351DBA000A005C2DAB /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = "hue-ios/ColorCube/CCColorCube.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5361DBA000A005C2DAB /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCColorCube.m; path = "hue-ios/ColorCube/CCColorCube.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5371DBA000A005C2DAB /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = "hue-ios/ColorCube/CCLocalMaximum.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5381DBA000A005C2DAB /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = "hue-ios/ColorCube/CCLocalMaximum.m"; sourceTree = SOURCE_ROOT; };
+		C90DE53B1DBA0013005C2DAB /* HRBrightnessCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = "hue-ios/Color-Picker-for-iOS/HRBrightnessCursor.h"; sourceTree = SOURCE_ROOT; };
+		C90DE53C1DBA0013005C2DAB /* HRBrightnessCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = "hue-ios/Color-Picker-for-iOS/HRBrightnessCursor.m"; sourceTree = SOURCE_ROOT; };
+		C90DE53D1DBA0013005C2DAB /* HRBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRBrightnessSlider.h; path = "hue-ios/Color-Picker-for-iOS/HRBrightnessSlider.h"; sourceTree = SOURCE_ROOT; };
+		C90DE53E1DBA0013005C2DAB /* HRBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessSlider.m; path = "hue-ios/Color-Picker-for-iOS/HRBrightnessSlider.m"; sourceTree = SOURCE_ROOT; };
+		C90DE53F1DBA0013005C2DAB /* HRColorCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorCursor.h; path = "hue-ios/Color-Picker-for-iOS/HRColorCursor.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5401DBA0013005C2DAB /* HRColorCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorCursor.m; path = "hue-ios/Color-Picker-for-iOS/HRColorCursor.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5411DBA0013005C2DAB /* HRColorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorInfoView.h; path = "hue-ios/Color-Picker-for-iOS/HRColorInfoView.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5421DBA0013005C2DAB /* HRColorInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorInfoView.m; path = "hue-ios/Color-Picker-for-iOS/HRColorInfoView.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5431DBA0013005C2DAB /* HRColorMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorMapView.h; path = "hue-ios/Color-Picker-for-iOS/HRColorMapView.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5441DBA0013005C2DAB /* HRColorMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorMapView.m; path = "hue-ios/Color-Picker-for-iOS/HRColorMapView.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5451DBA0013005C2DAB /* HRColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRColorPickerView.h; path = "hue-ios/Color-Picker-for-iOS/HRColorPickerView.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5461DBA0013005C2DAB /* HRColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRColorPickerView.m; path = "hue-ios/Color-Picker-for-iOS/HRColorPickerView.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5471DBA0013005C2DAB /* HRHSVColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRHSVColorUtil.h; path = "hue-ios/Color-Picker-for-iOS/HRHSVColorUtil.h"; sourceTree = SOURCE_ROOT; };
+		C90DE5481DBA0013005C2DAB /* HRHSVColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HRHSVColorUtil.m; path = "hue-ios/Color-Picker-for-iOS/HRHSVColorUtil.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5491DBA0013005C2DAB /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "hue-ios/Color-Picker-for-iOS/UIImage+CoreGraphics.h"; sourceTree = SOURCE_ROOT; };
+		C90DE54A1DBA0013005C2DAB /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "hue-ios/Color-Picker-for-iOS/UIImage+CoreGraphics.m"; sourceTree = SOURCE_ROOT; };
+		C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BEMCheckBox.framework; path = "../Library/Developer/Xcode/DerivedData/LightDJ-fgvefldgzvkjypbqfogyqehoviug/Build/Products/Debug-iphonesimulator/BEMCheckBox/BEMCheckBox.framework"; sourceTree = "<group>"; };
+		E0CAAE26E889EF0C35E7E478 /* Pods-LightDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightDJ/Pods-LightDJ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C9E8EE631DB5D012005BEEBA /* Frameworks */ = {
+		C90DE4871DB9CC80005C2DAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D76761A98C5E644672FA31 /* Pods_hue_ios.framework in Frameworks */,
+				C90DE5541DBA00C5005C2DAB /* BEMCheckBox.framework in Frameworks */,
+				1CEDFD4EB2E09000730A3890 /* Pods_hue_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC63DCB6FAF4F46ACC79DEE5 /* Pods */ = {
+		05EB0F46EB0A8B60F90DC920 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */,
-				E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */,
+				C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */,
+				364DBDBA8ADE1A669EA02D17 /* Pods_LightDJ.framework */,
+				B88DE1B95E944CCC1DAB85D7 /* Pods_hue_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3FEB7E345951B24A5EE8A9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C52D5B8A5A440E546DD31F07 /* Pods-LightDJ.debug.xcconfig */,
+				E0CAAE26E889EF0C35E7E478 /* Pods-LightDJ.release.xcconfig */,
+				C570C5B372CD26D06DB48A32 /* Pods-hue-ios.debug.xcconfig */,
+				099EB003C51E07CF2AA8FB3F /* Pods-hue-ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C9E8EE5D1DB5D012005BEEBA = {
+		C90DE4811DB9CC80005C2DAB = {
 			isa = PBXGroup;
 			children = (
-				C9E8EE681DB5D012005BEEBA /* hue-ios */,
-				C9E8EE671DB5D012005BEEBA /* Products */,
-				BC63DCB6FAF4F46ACC79DEE5 /* Pods */,
-				D365F3477C43D7E4997170FF /* Frameworks */,
+				C90DE48C1DB9CC80005C2DAB /* hue-ios */,
+				C90DE48B1DB9CC80005C2DAB /* Products */,
+				A3FEB7E345951B24A5EE8A9D /* Pods */,
+				05EB0F46EB0A8B60F90DC920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		C9E8EE671DB5D012005BEEBA /* Products */ = {
+		C90DE48B1DB9CC80005C2DAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9E8EE661DB5D012005BEEBA /* hue-ios.app */,
+				C90DE48A1DB9CC80005C2DAB /* hue-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C9E8EE681DB5D012005BEEBA /* hue-ios */ = {
+		C90DE48C1DB9CC80005C2DAB /* hue-ios */ = {
 			isa = PBXGroup;
 			children = (
-				C9E8EE891DB5D4C6005BEEBA /* Images */,
-				C9E8EE881DB5D4B7005BEEBA /* ColorCube */,
-				C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */,
-				C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */,
-				C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */,
-				C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */,
-				C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */,
-				C9E8EE701DB5D012005BEEBA /* Assets.xcassets */,
-				C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */,
-				C9E8EE751DB5D012005BEEBA /* Info.plist */,
-				C9E8EE811DB5D4AE005BEEBA /* hue-ios-Bridging-Header.h */,
-				C293AAA91DB9DBB700D28788 /* Music.swift */,
+				C90DE51C1DB9FFE0005C2DAB /* LaunchScreen.storyboard */,
+				C90DE51E1DB9FFE0005C2DAB /* Main.storyboard */,
+				C90DE5181DB9FFD1005C2DAB /* Assets.xcassets */,
+				C90DE51A1DB9FFD6005C2DAB /* Info.plist */,
+				C90DE5031DB9FA58005C2DAB /* Main */,
+				C90DE5111DB9FDA8005C2DAB /* MusicList */,
+				C90DE4D01DB9F8D7005C2DAB /* PatternPicker */,
+				C90DE4C11DB9EBDC005C2DAB /* ColorCube */,
+				C90DE4A11DB9D0B4005C2DAB /* Color-Picker-for-iOS */,
 			);
-			path = "hue-ios";
+			name = "hue-ios";
+			path = ColorPicker;
 			sourceTree = "<group>";
 		};
-		C9E8EE881DB5D4B7005BEEBA /* ColorCube */ = {
+		C90DE4A11DB9D0B4005C2DAB /* Color-Picker-for-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C9E8EE821DB5D4AE005BEEBA /* CCColorCube.h */,
-				C9E8EE831DB5D4AE005BEEBA /* CCColorCube.m */,
-				C9E8EE841DB5D4AE005BEEBA /* CCLocalMaximum.h */,
-				C9E8EE851DB5D4AE005BEEBA /* CCLocalMaximum.m */,
+				C90DE53B1DBA0013005C2DAB /* HRBrightnessCursor.h */,
+				C90DE53C1DBA0013005C2DAB /* HRBrightnessCursor.m */,
+				C90DE53D1DBA0013005C2DAB /* HRBrightnessSlider.h */,
+				C90DE53E1DBA0013005C2DAB /* HRBrightnessSlider.m */,
+				C90DE53F1DBA0013005C2DAB /* HRColorCursor.h */,
+				C90DE5401DBA0013005C2DAB /* HRColorCursor.m */,
+				C90DE5411DBA0013005C2DAB /* HRColorInfoView.h */,
+				C90DE5421DBA0013005C2DAB /* HRColorInfoView.m */,
+				C90DE5431DBA0013005C2DAB /* HRColorMapView.h */,
+				C90DE5441DBA0013005C2DAB /* HRColorMapView.m */,
+				C90DE5451DBA0013005C2DAB /* HRColorPickerView.h */,
+				C90DE5461DBA0013005C2DAB /* HRColorPickerView.m */,
+				C90DE5471DBA0013005C2DAB /* HRHSVColorUtil.h */,
+				C90DE5481DBA0013005C2DAB /* HRHSVColorUtil.m */,
+				C90DE5491DBA0013005C2DAB /* UIImage+CoreGraphics.h */,
+				C90DE54A1DBA0013005C2DAB /* UIImage+CoreGraphics.m */,
+			);
+			name = "Color-Picker-for-iOS";
+			sourceTree = "<group>";
+		};
+		C90DE4C11DB9EBDC005C2DAB /* ColorCube */ = {
+			isa = PBXGroup;
+			children = (
+				C90DE5351DBA000A005C2DAB /* CCColorCube.h */,
+				C90DE5361DBA000A005C2DAB /* CCColorCube.m */,
+				C90DE5371DBA000A005C2DAB /* CCLocalMaximum.h */,
+				C90DE5381DBA000A005C2DAB /* CCLocalMaximum.m */,
 			);
 			name = ColorCube;
 			sourceTree = "<group>";
 		};
-		C9E8EE891DB5D4C6005BEEBA /* Images */ = {
+		C90DE4D01DB9F8D7005C2DAB /* PatternPicker */ = {
 			isa = PBXGroup;
 			children = (
-				C9E8EE8A1DB5D4CE005BEEBA /* berlin.jpg */,
-				C9E8EE8B1DB5D4CE005BEEBA /* club.jpg */,
-				C9E8EE8C1DB5D4CE005BEEBA /* glotze.jpg */,
-				C9E8EE8D1DB5D4CE005BEEBA /* markt.jpg */,
-				C9E8EE8E1DB5D4CE005BEEBA /* melone.jpg */,
-				C9E8EE8F1DB5D4CE005BEEBA /* museum.jpg */,
-				C9E8EE901DB5D4CE005BEEBA /* schnee.jpg */,
-				C9E8EE911DB5D4CE005BEEBA /* strand.jpg */,
-				C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */,
-				C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */,
+				C90DE52B1DBA0002005C2DAB /* PatternColorController.swift */,
+				C90DE52C1DBA0002005C2DAB /* PatternController.swift */,
+				C90DE52D1DBA0002005C2DAB /* PatternPhotoController.swift */,
+				C90DE52E1DBA0002005C2DAB /* PatternPickerType.swift */,
+				C90DE52F1DBA0002005C2DAB /* PatternResultView.swift */,
 			);
-			name = Images;
+			name = PatternPicker;
 			sourceTree = "<group>";
 		};
-		D365F3477C43D7E4997170FF /* Frameworks */ = {
+		C90DE5031DB9FA58005C2DAB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */,
+				C90DE5221DB9FFE8005C2DAB /* Hue-Bridging-Header.h */,
+				C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */,
 			);
-			name = Frameworks;
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C90DE5111DB9FDA8005C2DAB /* MusicList */ = {
+			isa = PBXGroup;
+			children = (
+				C90DE5251DB9FFFB005C2DAB /* Music.swift */,
+				C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */,
+				C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */,
+			);
+			name = MusicList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9E8EE651DB5D012005BEEBA /* hue-ios */ = {
+		C90DE4891DB9CC80005C2DAB /* hue-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9E8EE781DB5D012005BEEBA /* Build configuration list for PBXNativeTarget "hue-ios" */;
+			buildConfigurationList = C90DE49C1DB9CC80005C2DAB /* Build configuration list for PBXNativeTarget "hue-ios" */;
 			buildPhases = (
-				61270427F68137E3C6AF6663 /* [CP] Check Pods Manifest.lock */,
-				C9E8EE621DB5D012005BEEBA /* Sources */,
-				C9E8EE631DB5D012005BEEBA /* Frameworks */,
-				C9E8EE641DB5D012005BEEBA /* Resources */,
-				8A3B2DC183D4F050A661DA73 /* [CP] Embed Pods Frameworks */,
-				1F487E8A74A7BB8A00912BC0 /* [CP] Copy Pods Resources */,
+				BC9D31C54C3390CBB66E5168 /* [CP] Check Pods Manifest.lock */,
+				C90DE4861DB9CC80005C2DAB /* Sources */,
+				C90DE4871DB9CC80005C2DAB /* Frameworks */,
+				C90DE4881DB9CC80005C2DAB /* Resources */,
+				4253CAAFB426EF345C19780E /* [CP] Embed Pods Frameworks */,
+				D1241DEA04A7EA0A20FD5FED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "hue-ios";
-			productName = "hue-ios";
-			productReference = C9E8EE661DB5D012005BEEBA /* hue-ios.app */;
+			productName = ColorPicker;
+			productReference = C90DE48A1DB9CC80005C2DAB /* hue-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C9E8EE5E1DB5D012005BEEBA /* Project object */ = {
+		C90DE4821DB9CC80005C2DAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = Hue;
+				ORGANIZATIONNAME = devhue;
 				TargetAttributes = {
-					C9E8EE651DB5D012005BEEBA = {
+					C90DE4891DB9CC80005C2DAB = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = C9E8EE611DB5D012005BEEBA /* Build configuration list for PBXProject "hue-ios" */;
+			buildConfigurationList = C90DE4851DB9CC80005C2DAB /* Build configuration list for PBXProject "hue-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,71 +261,32 @@
 				en,
 				Base,
 			);
-			mainGroup = C9E8EE5D1DB5D012005BEEBA;
-			productRefGroup = C9E8EE671DB5D012005BEEBA /* Products */;
+			mainGroup = C90DE4811DB9CC80005C2DAB;
+			productRefGroup = C90DE48B1DB9CC80005C2DAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9E8EE651DB5D012005BEEBA /* hue-ios */,
+				C90DE4891DB9CC80005C2DAB /* hue-ios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C9E8EE641DB5D012005BEEBA /* Resources */ = {
+		C90DE4881DB9CC80005C2DAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E8EE991DB5D4CE005BEEBA /* museum.jpg in Resources */,
-				C9E8EE961DB5D4CE005BEEBA /* glotze.jpg in Resources */,
-				C9E8EE981DB5D4CE005BEEBA /* melone.jpg in Resources */,
-				C9E8EE741DB5D012005BEEBA /* LaunchScreen.storyboard in Resources */,
-				C9E8EE971DB5D4CE005BEEBA /* markt.jpg in Resources */,
-				C9E8EE951DB5D4CE005BEEBA /* club.jpg in Resources */,
-				C9E8EE941DB5D4CE005BEEBA /* berlin.jpg in Resources */,
-				C9E8EE9B1DB5D4CE005BEEBA /* strand.jpg in Resources */,
-				C9E8EE9A1DB5D4CE005BEEBA /* schnee.jpg in Resources */,
-				C9E8EE711DB5D012005BEEBA /* Assets.xcassets in Resources */,
-				C9E8EE9C1DB5D4CE005BEEBA /* streetart.jpg in Resources */,
-				C9E8EE6F1DB5D012005BEEBA /* Main.storyboard in Resources */,
-				C9E8EE9D1DB5D4CE005BEEBA /* xberg.jpg in Resources */,
+				C90DE51B1DB9FFD6005C2DAB /* Info.plist in Resources */,
+				C90DE5211DB9FFE0005C2DAB /* Main.storyboard in Resources */,
+				C90DE5201DB9FFE0005C2DAB /* LaunchScreen.storyboard in Resources */,
+				C90DE5191DB9FFD1005C2DAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F487E8A74A7BB8A00912BC0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61270427F68137E3C6AF6663 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8A3B2DC183D4F050A661DA73 /* [CP] Embed Pods Frameworks */ = {
+		4253CAAFB426EF345C19780E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,46 +301,88 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC9D31C54C3390CBB66E5168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1241DEA04A7EA0A20FD5FED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C9E8EE621DB5D012005BEEBA /* Sources */ = {
+		C90DE4861DB9CC80005C2DAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E8EE861DB5D4AE005BEEBA /* CCColorCube.m in Sources */,
-				C293AAA81DB9DA3D00D28788 /* MusicListViewController.swift in Sources */,
-				C9E8EE6C1DB5D012005BEEBA /* HueViewController.swift in Sources */,
-				C293AAAE1DB9F65C00D28788 /* MusicListCellTableViewCell.swift in Sources */,
-				C9E8EE871DB5D4AE005BEEBA /* CCLocalMaximum.m in Sources */,
-				C9E8EE6A1DB5D012005BEEBA /* HueAppDelegate.swift in Sources */,
-				C293AAAA1DB9DBB700D28788 /* Music.swift in Sources */,
+				C90DE54B1DBA0013005C2DAB /* HRBrightnessCursor.m in Sources */,
+				C90DE5331DBA0002005C2DAB /* PatternPickerType.swift in Sources */,
+				C90DE5241DB9FFE8005C2DAB /* HueAppDelegate.swift in Sources */,
+				C90DE54F1DBA0013005C2DAB /* HRColorMapView.m in Sources */,
+				C90DE5281DB9FFFB005C2DAB /* Music.swift in Sources */,
+				C90DE5391DBA000A005C2DAB /* CCColorCube.m in Sources */,
+				C90DE5321DBA0002005C2DAB /* PatternPhotoController.swift in Sources */,
+				C90DE5301DBA0002005C2DAB /* PatternColorController.swift in Sources */,
+				C90DE53A1DBA000A005C2DAB /* CCLocalMaximum.m in Sources */,
+				C90DE5521DBA0013005C2DAB /* UIImage+CoreGraphics.m in Sources */,
+				C90DE5511DBA0013005C2DAB /* HRHSVColorUtil.m in Sources */,
+				C90DE54C1DBA0013005C2DAB /* HRBrightnessSlider.m in Sources */,
+				C90DE5291DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift in Sources */,
+				C90DE54E1DBA0013005C2DAB /* HRColorInfoView.m in Sources */,
+				C90DE54D1DBA0013005C2DAB /* HRColorCursor.m in Sources */,
+				C90DE5341DBA0002005C2DAB /* PatternResultView.swift in Sources */,
+				C90DE5311DBA0002005C2DAB /* PatternController.swift in Sources */,
+				C90DE52A1DB9FFFB005C2DAB /* MusicListViewController.swift in Sources */,
+				C90DE5501DBA0013005C2DAB /* HRColorPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */ = {
+		C90DE51C1DB9FFE0005C2DAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C9E8EE6E1DB5D012005BEEBA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9E8EE731DB5D012005BEEBA /* Base */,
+				C90DE51D1DB9FFE0005C2DAB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C90DE51E1DB9FFE0005C2DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90DE51F1DB9FFE0005C2DAB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C9E8EE761DB5D012005BEEBA /* Debug */ = {
+		C90DE49A1DB9CC80005C2DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +432,7 @@
 			};
 			name = Debug;
 		};
-		C9E8EE771DB5D012005BEEBA /* Release */ = {
+		C90DE49B1DB9CC80005C2DAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,33 +475,33 @@
 			};
 			name = Release;
 		};
-		C9E8EE791DB5D012005BEEBA /* Debug */ = {
+		C90DE49D1DB9CC80005C2DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */;
+			baseConfigurationReference = C570C5B372CD26D06DB48A32 /* Pods-hue-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hue.hue-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devhue.Hue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/hue-ios-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/Main/Hue-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		C9E8EE7A1DB5D012005BEEBA /* Release */ = {
+		C90DE49E1DB9CC80005C2DAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */;
+			baseConfigurationReference = 099EB003C51E07CF2AA8FB3F /* Pods-hue-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hue.hue-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devhue.Hue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/hue-ios-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/Main/Hue-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -448,25 +509,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9E8EE611DB5D012005BEEBA /* Build configuration list for PBXProject "hue-ios" */ = {
+		C90DE4851DB9CC80005C2DAB /* Build configuration list for PBXProject "hue-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9E8EE761DB5D012005BEEBA /* Debug */,
-				C9E8EE771DB5D012005BEEBA /* Release */,
+				C90DE49A1DB9CC80005C2DAB /* Debug */,
+				C90DE49B1DB9CC80005C2DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9E8EE781DB5D012005BEEBA /* Build configuration list for PBXNativeTarget "hue-ios" */ = {
+		C90DE49C1DB9CC80005C2DAB /* Build configuration list for PBXNativeTarget "hue-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9E8EE791DB5D012005BEEBA /* Debug */,
-				C9E8EE7A1DB5D012005BEEBA /* Release */,
+				C90DE49D1DB9CC80005C2DAB /* Debug */,
+				C90DE49E1DB9CC80005C2DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C9E8EE5E1DB5D012005BEEBA /* Project object */;
+	rootObject = C90DE4821DB9CC80005C2DAB /* Project object */;
 }

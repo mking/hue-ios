@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:hue-ios.xcodeproj">
+      location = "self:/Users/matt/ColorPicker/LightDJ.xcodeproj">
    </FileRef>
 </Workspace>

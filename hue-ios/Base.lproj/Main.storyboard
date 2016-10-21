@@ -1,45 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kjm-um-giO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jrw-yz-4LL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Music List View Controller-->
-        <scene sceneID="g3n-fY-7gl">
+        <!--Pattern Picker-->
+        <scene sceneID="NSw-oJ-S3x">
             <objects>
-                <viewController id="Kjm-um-giO" customClass="MusicListViewController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QDu-qg-Sct" customClass="PatternController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WcV-zY-3et"/>
-                        <viewControllerLayoutGuide type="bottom" id="U6V-t8-vsS"/>
+                        <viewControllerLayoutGuide type="top" id="nph-AN-fsS"/>
+                        <viewControllerLayoutGuide type="bottom" id="SSa-QO-epx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tlf-SF-xe4">
+                    <view key="view" contentMode="scaleToFill" id="FEz-hW-Pjk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-BF-rBU">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3dz-c3-6pg">
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZqW-kh-vza">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gs-ZJ-zY3">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olg-LY-idv" customClass="PatternResultView" customModule="LightDJ" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Q4p-Bn-P3y"/>
+                                            <constraint firstAttribute="width" constant="100" id="to6-Og-m4w"/>
+                                        </constraints>
+                                    </view>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="889-m3-pkF">
+                                        <segments>
+                                            <segment title="Photo Picker"/>
+                                            <segment title="Color Picker"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="pickerTypeChanged:" destination="QDu-qg-Sct" eventType="valueChanged" id="uME-Yf-uIz"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z51-c0-R5b">
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgx-OA-IFl" userLabel="Photo Picker">
+                                                <connections>
+                                                    <segue destination="sSc-8P-nhY" kind="embed" id="gUD-7Y-TtD"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-y0-YRr" userLabel="Color Picker">
+                                                <connections>
+                                                    <segue destination="mbc-xX-yr6" kind="embed" id="gqi-UB-mQG"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="xgx-OA-IFl" secondAttribute="bottom" id="0Xn-sG-tF0"/>
+                                            <constraint firstAttribute="trailing" secondItem="xgx-OA-IFl" secondAttribute="trailing" id="0oM-kj-wps"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Ma-y0-YRr" secondAttribute="trailing" id="1Hf-gw-Dhl"/>
+                                            <constraint firstItem="xgx-OA-IFl" firstAttribute="leading" secondItem="z51-c0-R5b" secondAttribute="leading" id="KfN-ly-5S5"/>
+                                            <constraint firstItem="xgx-OA-IFl" firstAttribute="top" secondItem="z51-c0-R5b" secondAttribute="top" id="Ofu-S5-Slx"/>
+                                            <constraint firstItem="0Ma-y0-YRr" firstAttribute="leading" secondItem="z51-c0-R5b" secondAttribute="leading" id="SbY-qw-KTd"/>
+                                            <constraint firstAttribute="width" constant="300" id="csz-Nz-R97"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Ma-y0-YRr" secondAttribute="bottom" id="jn0-na-2ls"/>
+                                            <constraint firstAttribute="height" constant="300" id="leI-Mr-zhj"/>
+                                            <constraint firstItem="0Ma-y0-YRr" firstAttribute="top" secondItem="z51-c0-R5b" secondAttribute="top" id="skS-MT-bbl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3dz-c3-6pg" firstAttribute="centerY" secondItem="FEz-hW-Pjk" secondAttribute="centerY" id="4l4-xx-hes"/>
+                            <constraint firstItem="3dz-c3-6pg" firstAttribute="centerX" secondItem="FEz-hW-Pjk" secondAttribute="centerX" id="Q2N-Yl-kYe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pattern Picker" id="2j5-9l-RGi"/>
+                    <connections>
+                        <outlet property="colorPickerView" destination="0Ma-y0-YRr" id="fcW-zp-NKv"/>
+                        <outlet property="photoPickerView" destination="xgx-OA-IFl" id="Is0-hC-uZH"/>
+                        <outlet property="pickerTypeControl" destination="889-m3-pkF" id="DAy-rq-mvn"/>
+                        <outlet property="resultView" destination="olg-LY-idv" id="LJf-UW-cCt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P77-VV-KDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="120"/>
+        </scene>
+        <!--Music List-->
+        <scene sceneID="840-OF-7oB">
+            <objects>
+                <viewController id="aXa-GG-BTH" customClass="MusicListViewController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AAO-qK-61K"/>
+                        <viewControllerLayoutGuide type="bottom" id="NF8-OZ-FKR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nmh-1N-8WA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-T0-dhv">
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dXR-7j-Vl2">
                                         <segments>
                                             <segment title="Recent"/>
                                             <segment title="Popular"/>
                                         </segments>
-                                        <connections>
-                                            <action selector="MusicSelectorChanged:" destination="Kjm-um-giO" eventType="valueChanged" id="BPp-2T-ICB"/>
-                                        </connections>
                                     </segmentedControl>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-v4-R3v">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MY0-hD-WLJ">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="393" id="3BW-Og-fK4"/>
-                                            <constraint firstAttribute="width" constant="240" id="8KH-to-LcD"/>
+                                            <constraint firstAttribute="width" constant="240" id="pLx-ol-cRU"/>
+                                            <constraint firstAttribute="height" constant="393" id="qeX-6P-yNS"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="mgM-48-giB">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="1dh-3S-fO3" customClass="MusicListCellTableViewCell" customModule="LightDJ" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mgM-48-giB" id="CD3-NW-DFs">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1dh-3S-fO3" id="5St-4Z-NO8">
                                                     <frame key="frameInset" width="240" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
@@ -51,75 +131,187 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5Jc-BF-rBU" firstAttribute="centerX" secondItem="tlf-SF-xe4" secondAttribute="centerX" id="KIL-PO-hlh"/>
-                            <constraint firstItem="5Jc-BF-rBU" firstAttribute="centerY" secondItem="tlf-SF-xe4" secondAttribute="centerY" id="Q1R-5W-iEQ"/>
+                            <constraint firstItem="3aq-T0-dhv" firstAttribute="centerX" secondItem="Nmh-1N-8WA" secondAttribute="centerX" id="ACj-ix-2h4"/>
+                            <constraint firstItem="3aq-T0-dhv" firstAttribute="centerY" secondItem="Nmh-1N-8WA" secondAttribute="centerY" id="xpf-zf-6Wo"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="MusicSelectorSegmentedControl" destination="ZqW-kh-vza" id="agI-Jt-AAg"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Music List" id="HUg-k4-CeE"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fIh-Tr-kJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulB-DV-Gjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151.19999999999999" y="-754.27286356821594"/>
+            <point key="canvasLocation" x="-594" y="-535"/>
         </scene>
-        <!--Hue View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="YYJ-Bw-YFk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HueViewController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="Jrw-yz-4LL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="nAk-rf-ZhK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QDu-qg-Sct" kind="relationship" relationship="viewControllers" id="qhC-S0-PYM"/>
+                        <segue destination="aXa-GG-BTH" kind="relationship" relationship="viewControllers" id="mwy-zz-sw7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3S-zK-k3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1546" y="-207"/>
+        </scene>
+        <!--Pattern Photo Controller-->
+        <scene sceneID="jV6-Uv-lRU">
+            <objects>
+                <viewController id="sSc-8P-nhY" customClass="PatternPhotoController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Wos-M1-rlh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ItH-uP-iSh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="1Jy-qF-fGG">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0w7-5n-4Wg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uBw-4I-zSW">
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LOu-3o-ygL">
-                                        <segments>
-                                            <segment title="Picture"/>
-                                            <segment title="Color Picker"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="tapPatternType:" destination="BYZ-38-t0r" eventType="valueChanged" id="AKY-N2-J2c"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hue!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZH-hf-aFi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqE-Zh-28p">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kln-gg-Jw1">
-                                        <state key="normal" title="ColorCube"/>
-                                        <connections>
-                                            <action selector="tapColorCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftO-Ua-USD"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-KX-Rsb">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-gn-avK">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-Vf-DyI">
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to add photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y73-qA-aXS">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="YuH-Pj-QEE"/>
-                                            <constraint firstAttribute="height" constant="200" id="dqr-yx-gdl"/>
+                                            <constraint firstItem="y73-qA-aXS" firstAttribute="centerY" secondItem="PFV-gn-avK" secondAttribute="centerY" id="6d4-Ez-ssP"/>
+                                            <constraint firstAttribute="trailing" secondItem="8hn-Vf-DyI" secondAttribute="trailing" id="Cws-zj-Vwf"/>
+                                            <constraint firstAttribute="bottom" secondItem="8hn-Vf-DyI" secondAttribute="bottom" id="F0m-DQ-2uw"/>
+                                            <constraint firstItem="y73-qA-aXS" firstAttribute="centerX" secondItem="PFV-gn-avK" secondAttribute="centerX" id="NDr-Fh-8Mv"/>
+                                            <constraint firstItem="8hn-Vf-DyI" firstAttribute="leading" secondItem="PFV-gn-avK" secondAttribute="leading" id="Uck-1E-Cfk"/>
+                                            <constraint firstAttribute="width" constant="200" id="asC-ut-KgW"/>
+                                            <constraint firstItem="8hn-Vf-DyI" firstAttribute="top" secondItem="PFV-gn-avK" secondAttribute="top" id="pGR-XR-OEn"/>
+                                            <constraint firstAttribute="height" constant="200" id="yGG-Y7-za9"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Cky-jD-FAa" appends="YES" id="YKp-jI-EFO"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0w7-5n-4Wg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SR7-KH-qoY"/>
-                            <constraint firstItem="0w7-5n-4Wg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pcf-8t-nUH"/>
+                            <constraint firstItem="uBw-4I-zSW" firstAttribute="centerY" secondItem="1Jy-qF-fGG" secondAttribute="centerY" id="AUg-Pe-9cP"/>
+                            <constraint firstItem="uBw-4I-zSW" firstAttribute="centerX" secondItem="1Jy-qF-fGG" secondAttribute="centerX" id="ydn-eH-12H"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="colorView" destination="QYc-KX-Rsb" id="YtI-Ae-c93"/>
+                        <outlet property="emptyPhotoLabel" destination="y73-qA-aXS" id="F0E-ry-UiT"/>
+                        <outlet property="photoView" destination="8hn-Vf-DyI" id="tEx-m6-PZs"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Np2-Pj-RAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Cky-jD-FAa">
+                    <connections>
+                        <action selector="selectPhoto:" destination="sSc-8P-nhY" id="GeQ-s9-6ru"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-151" y="47"/>
+            <point key="canvasLocation" x="139" y="-53"/>
+        </scene>
+        <!--Pattern Color Controller-->
+        <scene sceneID="UH6-wJ-1ZP">
+            <objects>
+                <viewController id="mbc-xX-yr6" customClass="PatternColorController" customModule="LightDJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EDb-im-Qld"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRH-01-i7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KEq-tV-lj8">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mdH-Ek-whY">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-nj-M60">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-Kp-0hG" customClass="HRColorPickerView">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rt5-1m-DYx" customClass="HRBrightnessSlider">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="UUp-6R-3Ch"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="eir-lv-mth"/>
+                                                    <constraint firstAttribute="height" id="kKI-YL-BvT"/>
+                                                    <constraint firstAttribute="width" id="ube-X5-10J"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="brightness">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-yk-NdM" customClass="HRColorMapView">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="saturationUpperLimit">
+                                                        <real key="value" value="0.94999999999999996"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="tileSize">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lXP-yk-NdM" firstAttribute="top" secondItem="iQ4-Kp-0hG" secondAttribute="top" id="1XQ-79-pwl"/>
+                                            <constraint firstItem="rt5-1m-DYx" firstAttribute="top" secondItem="iQ4-Kp-0hG" secondAttribute="top" id="AOy-wh-0Hc"/>
+                                            <constraint firstItem="rt5-1m-DYx" firstAttribute="leading" secondItem="iQ4-Kp-0hG" secondAttribute="leading" id="CRb-Tr-Cfl"/>
+                                            <constraint firstAttribute="height" constant="200" id="GHw-bZ-12k"/>
+                                            <constraint firstAttribute="trailing" secondItem="lXP-yk-NdM" secondAttribute="trailing" id="HpL-DV-UYZ"/>
+                                            <constraint firstAttribute="width" constant="200" id="rDa-hS-Gga"/>
+                                            <constraint firstAttribute="bottom" secondItem="lXP-yk-NdM" secondAttribute="bottom" id="rcF-TM-xAE"/>
+                                            <constraint firstItem="lXP-yk-NdM" firstAttribute="leading" secondItem="iQ4-Kp-0hG" secondAttribute="leading" id="saj-DB-I8t"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.27510677067323908" green="1" blue="0.73419429625958277" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="colorChanged:" destination="mbc-xX-yr6" eventType="valueChanged" id="FY4-El-HcQ"/>
+                                            <outlet property="brightnessSlider" destination="rt5-1m-DYx" id="3b9-wb-dR1"/>
+                                            <outlet property="colorMapView" destination="lXP-yk-NdM" id="I91-e8-dbC"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mdH-Ek-whY" firstAttribute="centerX" secondItem="KEq-tV-lj8" secondAttribute="centerX" id="6uW-br-Xvv"/>
+                            <constraint firstItem="mdH-Ek-whY" firstAttribute="centerY" secondItem="KEq-tV-lj8" secondAttribute="centerY" id="mdl-JP-gAl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorPickerView" destination="iQ4-Kp-0hG" id="qfE-E7-jP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nE-8M-snd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="291"/>
         </scene>
     </scenes>
 </document>

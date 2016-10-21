@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  hue-ios
+//  ColorPicker
 //
-//  Created by Matt King on 10/17/16.
-//  Copyright © 2016 Hue. All rights reserved.
+//  Created by Matt King on 10/20/16.
+//  Copyright © 2016 Matt. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class HueAppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    
+
     // MARK: UIApplicationDelegate
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
