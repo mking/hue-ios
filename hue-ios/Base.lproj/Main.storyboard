@@ -77,7 +77,7 @@
                             <constraint firstItem="3dz-c3-6pg" firstAttribute="centerX" secondItem="FEz-hW-Pjk" secondAttribute="centerX" id="Q2N-Yl-kYe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pattern Picker" id="2j5-9l-RGi"/>
+                    <tabBarItem key="tabBarItem" title="Pattern Picker" image="ic_mode_edit" id="2j5-9l-RGi"/>
                     <connections>
                         <outlet property="colorPickerView" destination="0Ma-y0-YRr" id="fcW-zp-NKv"/>
                         <outlet property="photoPickerView" destination="xgx-OA-IFl" id="Is0-hC-uZH"/>
@@ -135,7 +135,7 @@
                             <constraint firstItem="3aq-T0-dhv" firstAttribute="centerY" secondItem="Nmh-1N-8WA" secondAttribute="centerY" id="xpf-zf-6Wo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music List" id="HUg-k4-CeE"/>
+                    <tabBarItem key="tabBarItem" title="Music List" image="ic_library_music" id="HUg-k4-CeE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulB-DV-Gjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,4 +314,8 @@
             <point key="canvasLocation" x="138" y="291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_library_music" width="24" height="24"/>
+        <image name="ic_mode_edit" width="24" height="24"/>
+    </resources>
 </document>

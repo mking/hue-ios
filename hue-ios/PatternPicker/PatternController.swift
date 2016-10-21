@@ -64,6 +64,9 @@ class PatternController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        photoPickerView.alpha = 1
+        colorPickerView.alpha = 0
+        
         update()
     }
 
