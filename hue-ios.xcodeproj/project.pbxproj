@@ -14,7 +14,7 @@
 		C90DE5211DB9FFE0005C2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51E1DB9FFE0005C2DAB /* Main.storyboard */; };
 		C90DE5241DB9FFE8005C2DAB /* HueAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */; };
 		C90DE5281DB9FFFB005C2DAB /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5251DB9FFFB005C2DAB /* Music.swift */; };
-		C90DE5291DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */; };
+		C90DE5291DB9FFFB005C2DAB /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5261DB9FFFB005C2DAB /* MusicListTableViewCell.swift */; };
 		C90DE52A1DB9FFFB005C2DAB /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */; };
 		C90DE5301DBA0002005C2DAB /* PatternColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52B1DBA0002005C2DAB /* PatternColorController.swift */; };
 		C90DE5311DBA0002005C2DAB /* PatternController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE52C1DBA0002005C2DAB /* PatternController.swift */; };
@@ -48,7 +48,7 @@
 		C90DE5221DB9FFE8005C2DAB /* Hue-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hue-Bridging-Header.h"; path = "hue-ios/Main/Hue-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HueAppDelegate.swift; path = "hue-ios/Main/HueAppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		C90DE5251DB9FFFB005C2DAB /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Music.swift; path = "hue-ios/MusicList/Music.swift"; sourceTree = SOURCE_ROOT; };
-		C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListCellTableViewCell.swift; path = "hue-ios/MusicList/MusicListCellTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		C90DE5261DB9FFFB005C2DAB /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListTableViewCell.swift; path = "hue-ios/MusicList/MusicListTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicListViewController.swift; path = "hue-ios/MusicList/MusicListViewController.swift"; sourceTree = SOURCE_ROOT; };
 		C90DE52B1DBA0002005C2DAB /* PatternColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternColorController.swift; path = "hue-ios/PatternPicker/PatternColorController.swift"; sourceTree = SOURCE_ROOT; };
 		C90DE52C1DBA0002005C2DAB /* PatternController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatternController.swift; path = "hue-ios/PatternPicker/PatternController.swift"; sourceTree = SOURCE_ROOT; };
@@ -207,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				C90DE5251DB9FFFB005C2DAB /* Music.swift */,
-				C90DE5261DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift */,
+				C90DE5261DB9FFFB005C2DAB /* MusicListTableViewCell.swift */,
 				C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */,
 			);
 			name = MusicList;
@@ -350,7 +350,7 @@
 				C90DE5521DBA0013005C2DAB /* UIImage+CoreGraphics.m in Sources */,
 				C90DE5511DBA0013005C2DAB /* HRHSVColorUtil.m in Sources */,
 				C90DE54C1DBA0013005C2DAB /* HRBrightnessSlider.m in Sources */,
-				C90DE5291DB9FFFB005C2DAB /* MusicListCellTableViewCell.swift in Sources */,
+				C90DE5291DB9FFFB005C2DAB /* MusicListTableViewCell.swift in Sources */,
 				C90DE54E1DBA0013005C2DAB /* HRColorInfoView.m in Sources */,
 				C90DE54D1DBA0013005C2DAB /* HRColorCursor.m in Sources */,
 				C90DE5341DBA0002005C2DAB /* PatternResultView.swift in Sources */,

@@ -9,15 +9,17 @@
 import UIKit
 import BEMCheckBox
 
-class MusicListCellTableViewCell: UITableViewCell {
+class MusicListTableViewCell: UITableViewCell {
     
     // MARK: Outlets
-    @IBOutlet var checkbox:BEMCheckBox!
+    @IBOutlet weak var songName: UILabel!
+    @IBOutlet weak var checkBox: BEMCheckBox!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.checkBox.onAnimationType = BEMAnimationType.bounce
+        self.checkBox.offAnimationType = BEMAnimationType.bounce
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

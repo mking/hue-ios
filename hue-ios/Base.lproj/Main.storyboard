@@ -108,6 +108,9 @@
                                             <segment title="Recent"/>
                                             <segment title="Popular"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="MusicSelectorChanged:" destination="aXa-GG-BTH" eventType="valueChanged" id="cYU-vv-V1A"/>
+                                        </connections>
                                     </segmentedControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MY0-hD-WLJ">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,20 +119,20 @@
                                             <constraint firstAttribute="height" constant="393" id="qeX-6P-yNS"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="1dh-3S-fO3" customClass="MusicListCellTableViewCell" customModule="hue_ios" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListTableViewCell" id="1dh-3S-fO3" customClass="MusicListTableViewCell" customModule="hue_ios" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="240" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1dh-3S-fO3" id="5St-4Z-NO8">
                                                     <frame key="frameInset" width="240" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-nh-LHL">
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qtB-nh-LHL" customClass="BEMCheckBox">
                                                             <frame key="frameInset" minX="8" minY="8" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UP-hy-CQc">
-                                                            <frame key="frameInset" minX="57" width="42" height="21"/>
+                                                            <frame key="frameInset" minX="57" width="175" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -137,6 +140,10 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="checkBox" destination="qtB-nh-LHL" id="Z2y-bh-33t"/>
+                                                    <outlet property="songName" destination="9UP-hy-CQc" id="aOC-dv-IxI"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -149,11 +156,15 @@
                             <constraint firstItem="3aq-T0-dhv" firstAttribute="centerY" secondItem="Nmh-1N-8WA" secondAttribute="centerY" id="xpf-zf-6Wo"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music List" image="ic_library_music" id="HUg-k4-CeE"/>
+                    <tabBarItem key="tabBarItem" title="Music List" id="HUg-k4-CeE"/>
+                    <connections>
+                        <outlet property="MusicListTableView" destination="MY0-hD-WLJ" id="Z1k-MG-eJ3"/>
+                        <outlet property="MusicSelectorSegmentedControl" destination="dXR-7j-Vl2" id="IwV-2I-47H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulB-DV-Gjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="-535"/>
+            <point key="canvasLocation" x="-594.39999999999998" y="-535.68215892053979"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YYJ-Bw-YFk">
@@ -329,7 +340,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_library_music" width="24" height="24"/>
         <image name="ic_mode_edit" width="24" height="24"/>
     </resources>
 </document>
