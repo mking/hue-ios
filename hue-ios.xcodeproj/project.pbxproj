@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62D76761A98C5E644672FA31 /* Pods_hue_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */; };
+		C293AAA81DB9DA3D00D28788 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */; };
+		C293AAAA1DB9DBB700D28788 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAA91DB9DBB700D28788 /* Music.swift */; };
+		C293AAAE1DB9F65C00D28788 /* MusicListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */; };
 		C9E8EE6A1DB5D012005BEEBA /* HueAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */; };
 		C9E8EE6C1DB5D012005BEEBA /* HueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */; };
 		C9E8EE6F1DB5D012005BEEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */; };
@@ -27,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hue_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
+		C293AAA91DB9DBB700D28788 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListCellTableViewCell.swift; sourceTree = "<group>"; };
 		C9E8EE661DB5D012005BEEBA /* hue-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hue-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueAppDelegate.swift; sourceTree = "<group>"; };
 		C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		C9E8EE911DB5D4CE005BEEBA /* strand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = strand.jpg; path = Images/strand.jpg; sourceTree = "<group>"; };
 		C9E8EE921DB5D4CE005BEEBA /* streetart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = streetart.jpg; path = Images/streetart.jpg; sourceTree = "<group>"; };
 		C9E8EE931DB5D4CE005BEEBA /* xberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xberg.jpg; path = Images/xberg.jpg; sourceTree = "<group>"; };
+		E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hue-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +66,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D76761A98C5E644672FA31 /* Pods_hue_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC63DCB6FAF4F46ACC79DEE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */,
+				E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9E8EE5D1DB5D012005BEEBA = {
 			isa = PBXGroup;
 			children = (
 				C9E8EE681DB5D012005BEEBA /* hue-ios */,
 				C9E8EE671DB5D012005BEEBA /* Products */,
+				BC63DCB6FAF4F46ACC79DEE5 /* Pods */,
+				D365F3477C43D7E4997170FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,12 +106,15 @@
 				C9E8EE891DB5D4C6005BEEBA /* Images */,
 				C9E8EE881DB5D4B7005BEEBA /* ColorCube */,
 				C9E8EE691DB5D012005BEEBA /* HueAppDelegate.swift */,
+				C293AAA71DB9DA3D00D28788 /* MusicListViewController.swift */,
+				C293AAAD1DB9F65C00D28788 /* MusicListCellTableViewCell.swift */,
 				C9E8EE6B1DB5D012005BEEBA /* HueViewController.swift */,
 				C9E8EE6D1DB5D012005BEEBA /* Main.storyboard */,
 				C9E8EE701DB5D012005BEEBA /* Assets.xcassets */,
 				C9E8EE721DB5D012005BEEBA /* LaunchScreen.storyboard */,
 				C9E8EE751DB5D012005BEEBA /* Info.plist */,
 				C9E8EE811DB5D4AE005BEEBA /* hue-ios-Bridging-Header.h */,
+				C293AAA91DB9DBB700D28788 /* Music.swift */,
 			);
 			path = "hue-ios";
 			sourceTree = "<group>";
@@ -122,6 +147,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D365F3477C43D7E4997170FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E5E67FF5ACCF884A91D5F6E /* Pods_hue_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9E8EE781DB5D012005BEEBA /* Build configuration list for PBXNativeTarget "hue-ios" */;
 			buildPhases = (
+				61270427F68137E3C6AF6663 /* [CP] Check Pods Manifest.lock */,
 				C9E8EE621DB5D012005BEEBA /* Sources */,
 				C9E8EE631DB5D012005BEEBA /* Frameworks */,
 				C9E8EE641DB5D012005BEEBA /* Resources */,
+				8A3B2DC183D4F050A661DA73 /* [CP] Embed Pods Frameworks */,
+				1F487E8A74A7BB8A00912BC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,15 +236,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F487E8A74A7BB8A00912BC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61270427F68137E3C6AF6663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A3B2DC183D4F050A661DA73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hue-ios/Pods-hue-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9E8EE621DB5D012005BEEBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9E8EE861DB5D4AE005BEEBA /* CCColorCube.m in Sources */,
+				C293AAA81DB9DA3D00D28788 /* MusicListViewController.swift in Sources */,
 				C9E8EE6C1DB5D012005BEEBA /* HueViewController.swift in Sources */,
+				C293AAAE1DB9F65C00D28788 /* MusicListCellTableViewCell.swift in Sources */,
 				C9E8EE871DB5D4AE005BEEBA /* CCLocalMaximum.m in Sources */,
 				C9E8EE6A1DB5D012005BEEBA /* HueAppDelegate.swift in Sources */,
+				C293AAAA1DB9DBB700D28788 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +416,7 @@
 		};
 		C9E8EE791DB5D012005BEEBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CA6DE73CF90E2A09CC7427 /* Pods-hue-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -344,6 +432,7 @@
 		};
 		C9E8EE7A1DB5D012005BEEBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E050713ACF2BF9372A1BEEB7 /* Pods-hue-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -375,6 +464,7 @@
 				C9E8EE7A1DB5D012005BEEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

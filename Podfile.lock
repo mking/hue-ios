@@ -1,0 +1,12 @@
+PODS:
+  - BEMCheckBox (1.2.1)
+
+DEPENDENCIES:
+  - BEMCheckBox
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 264b8b72aa92adbfefa265cc58a0cdb86b207b9f
+
+PODFILE CHECKSUM: b3b88c70f6a6885c6c5dd71de933effd40ccad28
+
+COCOAPODS: 1.1.1

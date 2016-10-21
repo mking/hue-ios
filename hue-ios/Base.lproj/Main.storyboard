@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kjm-um-giO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Music List View Controller-->
+        <scene sceneID="g3n-fY-7gl">
+            <objects>
+                <viewController id="Kjm-um-giO" customClass="MusicListViewController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WcV-zY-3et"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6V-t8-vsS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tlf-SF-xe4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-BF-rBU">
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZqW-kh-vza">
+                                        <segments>
+                                            <segment title="Recent"/>
+                                            <segment title="Popular"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="MusicSelectorChanged:" destination="Kjm-um-giO" eventType="valueChanged" id="BPp-2T-ICB"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-v4-R3v">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="393" id="3BW-Og-fK4"/>
+                                            <constraint firstAttribute="width" constant="240" id="8KH-to-LcD"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListCell" id="mgM-48-giB">
+                                                <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mgM-48-giB" id="CD3-NW-DFs">
+                                                    <frame key="frameInset" width="240" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Jc-BF-rBU" firstAttribute="centerX" secondItem="tlf-SF-xe4" secondAttribute="centerX" id="KIL-PO-hlh"/>
+                            <constraint firstItem="5Jc-BF-rBU" firstAttribute="centerY" secondItem="tlf-SF-xe4" secondAttribute="centerY" id="Q1R-5W-iEQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MusicSelectorSegmentedControl" destination="ZqW-kh-vza" id="agI-Jt-AAg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIh-Tr-kJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.19999999999999" y="-754.27286356821594"/>
+        </scene>
         <!--Hue View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -62,6 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-151" y="47"/>
         </scene>
     </scenes>
 </document>
