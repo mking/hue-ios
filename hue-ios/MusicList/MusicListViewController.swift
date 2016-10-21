@@ -28,9 +28,7 @@ class MusicListViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var MusicSelectorSegmentedControl: UISegmentedControl!
-    
-    @IBOutlet weak var RecentMusicListView: UIView!
-    @IBOutlet weak var PopularMusicListView: UIView!
+    @IBOutlet weak var MusicListTableView: UITableView!
     
     
     // MARK: Actions
