@@ -14,6 +14,8 @@ class MusicListTableViewCell: UITableViewCell {
     // MARK: Outlets
     @IBOutlet weak var songName: UILabel!
     @IBOutlet weak var checkBox: BEMCheckBox!
+    @IBOutlet weak var albumCover: UIImageView!
+    @IBOutlet weak var album: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

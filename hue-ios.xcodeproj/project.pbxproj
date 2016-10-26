@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1CEDFD4EB2E09000730A3890 /* Pods_hue_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE1B95E944CCC1DAB85D7 /* Pods_hue_ios.framework */; };
 		C90DE5191DB9FFD1005C2DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90DE5181DB9FFD1005C2DAB /* Assets.xcassets */; };
-		C90DE51B1DB9FFD6005C2DAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51A1DB9FFD6005C2DAB /* Info.plist */; };
 		C90DE5201DB9FFE0005C2DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51C1DB9FFE0005C2DAB /* LaunchScreen.storyboard */; };
 		C90DE5211DB9FFE0005C2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90DE51E1DB9FFE0005C2DAB /* Main.storyboard */; };
 		C90DE5241DB9FFE8005C2DAB /* HueAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5231DB9FFE8005C2DAB /* HueAppDelegate.swift */; };
@@ -276,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90DE51B1DB9FFD6005C2DAB /* Info.plist in Resources */,
 				C90DE5211DB9FFE0005C2DAB /* Main.storyboard in Resources */,
 				C90DE5201DB9FFE0005C2DAB /* LaunchScreen.storyboard in Resources */,
 				C90DE5191DB9FFD1005C2DAB /* Assets.xcassets in Resources */,

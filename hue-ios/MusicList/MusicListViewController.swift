@@ -27,7 +27,7 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        MusicListTableView.delegate = self
+        self.MusicListTableView.delegate = self
         self.MusicListTableView.dataSource = self
         //self.MusicListTableView.register(MusicListTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         loadMusics(musics: recentMusics)
@@ -80,9 +80,10 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.checkBox.on = false
         cell.songName.text = music.name
+        cell.albumCover.image = music.albumCover
+        cell.album.text = music.album
         return cell
     }
-    
 
     /*
     // MARK: - Navigation
