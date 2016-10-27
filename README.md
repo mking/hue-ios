@@ -5,5 +5,3 @@ Setup
 ```
 pod install
 ```
-
-test
