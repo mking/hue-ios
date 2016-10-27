@@ -41,16 +41,19 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     private func loadMusics(musics: [Music]) {
-        while self.musicList.count > 0 {
-            self.musicList.removeFirst()
-            MusicListTableView.deleteRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
-        }
+        self.musicList = musics
+        MusicListTableView.reloadSections(IndexSet(integer: 0), with: .automatic)
         
-        for music in musics {
-            let newIndexPath = IndexPath(row: self.musicList.count, section: 0)
-            musicList.append(music)
-            MusicListTableView.insertRows(at: [newIndexPath], with: .bottom)
-        }
+        //        while self.musicList.count > 0 {
+//            self.musicList.removeFirst()
+//            MusicListTableView.deleteRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
+//        }
+        
+//        for music in musics {
+//            let newIndexPath = IndexPath(row: self.musicList.count, section: 0)
+//            musicList.append(music)
+//            MusicListTableView.insertRows(at: [newIndexPath], with: .bottom)
+//        }
     }
     
     // MARK: Outlets
@@ -76,7 +79,7 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MusicListTableViewCell
         
         // Fetches the appropriate meal for the data source layout.
-        let music = musicList[(indexPath as NSIndexPath).row]
+        let music = musicList[indexPath.row]
         
         cell.checkBox.on = false
         cell.songName.text = music.name
