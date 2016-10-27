@@ -23,6 +23,8 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
         Music(name: "Starboy", album: "Starboy", albumCover: #imageLiteral(resourceName: "starboy"), singer: "The Weend", composer: "The Weend")!,
     ]
     
+    // MARK: UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +39,6 @@ class MusicListViewController: UIViewController, UITableViewDelegate, UITableVie
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     private func loadMusics(musics: [Music]) {
         self.musicList = musics

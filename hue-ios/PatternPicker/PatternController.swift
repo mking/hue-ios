@@ -50,12 +50,26 @@ class PatternController: UIViewController {
     @IBOutlet weak var photoPickerView: UIView!
     @IBOutlet weak var colorPickerView: UIView!
     @IBOutlet weak var resultView: PatternResultView!
+    @IBOutlet weak var nextButton: UIBarButtonItem!
     
     // MARK: Actions
     
     @IBAction func pickerTypeChanged(_ sender: AnyObject) {
         pickerType = pickerTypes[pickerTypeControl.selectedSegmentIndex]
         update()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender as? UIBarButtonItem === nextButton {
+            print("prepare for segue from pattern controller (1)")
+        } else {
+            print("prepare for segue \(segue) \(sender)")
+        }
+        
+//        segue.destination
+//        if let source = segue.source as? MusicListViewController {
+//            print("music from music list controller \(source.selectedMusics)")
+//        }
     }
     
     // MARK: UIViewController
