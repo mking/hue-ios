@@ -31,6 +31,10 @@
 		C90DE5511DBA0013005C2DAB /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE5481DBA0013005C2DAB /* HRHSVColorUtil.m */; };
 		C90DE5521DBA0013005C2DAB /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = C90DE54A1DBA0013005C2DAB /* UIImage+CoreGraphics.m */; };
 		C90DE5541DBA00C5005C2DAB /* BEMCheckBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */; };
+		C93649B81DCD436200EA07F1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93649B71DCD436200EA07F1 /* WelcomeViewController.swift */; };
+		C93649D31DCD534300EA07F1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93649D21DCD534300EA07F1 /* MediaPlayer.framework */; };
+		C93649D71DCD5ABD00EA07F1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93649D61DCD5ABD00EA07F1 /* CoreData.framework */; };
+		C93649DB1DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C93649D91DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,10 @@
 		C90DE5491DBA0013005C2DAB /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "hue-ios/Color-Picker-for-iOS/UIImage+CoreGraphics.h"; sourceTree = SOURCE_ROOT; };
 		C90DE54A1DBA0013005C2DAB /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "hue-ios/Color-Picker-for-iOS/UIImage+CoreGraphics.m"; sourceTree = SOURCE_ROOT; };
 		C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BEMCheckBox.framework; path = "../Library/Developer/Xcode/DerivedData/LightDJ-fgvefldgzvkjypbqfogyqehoviug/Build/Products/Debug-iphonesimulator/BEMCheckBox/BEMCheckBox.framework"; sourceTree = "<group>"; };
+		C93649B71DCD436200EA07F1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		C93649D21DCD534300EA07F1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C93649D61DCD5ABD00EA07F1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C93649DA1DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PatternManagedObject.xcdatamodel; sourceTree = "<group>"; };
 		E0CAAE26E889EF0C35E7E478 /* Pods-LightDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightDJ/Pods-LightDJ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93649D71DCD5ABD00EA07F1 /* CoreData.framework in Frameworks */,
+				C93649D31DCD534300EA07F1 /* MediaPlayer.framework in Frameworks */,
 				C90DE5541DBA00C5005C2DAB /* BEMCheckBox.framework in Frameworks */,
 				1CEDFD4EB2E09000730A3890 /* Pods_hue_ios.framework in Frameworks */,
 			);
@@ -94,6 +104,8 @@
 		05EB0F46EB0A8B60F90DC920 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C93649D61DCD5ABD00EA07F1 /* CoreData.framework */,
+				C93649D21DCD534300EA07F1 /* MediaPlayer.framework */,
 				C90DE5531DBA00C5005C2DAB /* BEMCheckBox.framework */,
 				364DBDBA8ADE1A669EA02D17 /* Pods_LightDJ.framework */,
 				B88DE1B95E944CCC1DAB85D7 /* Pods_hue_ios.framework */,
@@ -115,6 +127,7 @@
 		C90DE4811DB9CC80005C2DAB = {
 			isa = PBXGroup;
 			children = (
+				C93649D81DCD5AEB00EA07F1 /* Resources */,
 				C90DE48C1DB9CC80005C2DAB /* hue-ios */,
 				C90DE48B1DB9CC80005C2DAB /* Products */,
 				A3FEB7E345951B24A5EE8A9D /* Pods */,
@@ -138,6 +151,7 @@
 				C90DE5181DB9FFD1005C2DAB /* Assets.xcassets */,
 				C90DE51A1DB9FFD6005C2DAB /* Info.plist */,
 				C90DE5031DB9FA58005C2DAB /* Main */,
+				C93649B61DCD430B00EA07F1 /* Welcome */,
 				C90DE5111DB9FDA8005C2DAB /* MusicList */,
 				C90DE4D01DB9F8D7005C2DAB /* PatternPicker */,
 				C90DE4C11DB9EBDC005C2DAB /* ColorCube */,
@@ -210,6 +224,22 @@
 				C90DE5271DB9FFFB005C2DAB /* MusicListViewController.swift */,
 			);
 			name = MusicList;
+			sourceTree = "<group>";
+		};
+		C93649B61DCD430B00EA07F1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C93649B71DCD436200EA07F1 /* WelcomeViewController.swift */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		C93649D81DCD5AEB00EA07F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C93649D91DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodeld */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90DE54B1DBA0013005C2DAB /* HRBrightnessCursor.m in Sources */,
+				C93649B81DCD436200EA07F1 /* WelcomeViewController.swift in Sources */,
 				C90DE5331DBA0002005C2DAB /* PatternPickerType.swift in Sources */,
 				C90DE5241DB9FFE8005C2DAB /* HueAppDelegate.swift in Sources */,
 				C90DE54F1DBA0013005C2DAB /* HRColorMapView.m in Sources */,
@@ -351,6 +382,7 @@
 				C90DE54C1DBA0013005C2DAB /* HRBrightnessSlider.m in Sources */,
 				C90DE5291DB9FFFB005C2DAB /* MusicListTableViewCell.swift in Sources */,
 				C90DE54E1DBA0013005C2DAB /* HRColorInfoView.m in Sources */,
+				C93649DB1DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodeld in Sources */,
 				C90DE54D1DBA0013005C2DAB /* HRColorCursor.m in Sources */,
 				C90DE5341DBA0002005C2DAB /* PatternResultView.swift in Sources */,
 				C90DE5311DBA0002005C2DAB /* PatternController.swift in Sources */,
@@ -483,6 +515,13 @@
 				DEVELOPMENT_TEAM = QN46P2PK7U;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BEMCheckBox\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devhue.Hue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/Main/Hue-Bridging-Header.h";
@@ -500,6 +539,13 @@
 				DEVELOPMENT_TEAM = QN46P2PK7U;
 				INFOPLIST_FILE = "hue-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BEMCheckBox\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devhue.Hue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hue-ios/Main/Hue-Bridging-Header.h";
@@ -529,6 +575,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C93649D91DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C93649DA1DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodel */,
+			);
+			currentVersion = C93649DA1DCD5B8F00EA07F1 /* PatternManagedObject.xcdatamodel */;
+			path = PatternManagedObject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C90DE4821DB9CC80005C2DAB /* Project object */;
 }

@@ -7,4 +7,5 @@ target 'hue-ios' do
 
   # Pods for LightDJ
   pod 'BEMCheckBox'
+  pod 'Alamofire'
 end

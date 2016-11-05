@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class HueAppDelegate: UIResponder, UIApplicationDelegate {

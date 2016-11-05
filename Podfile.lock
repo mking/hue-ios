@@ -1,12 +1,15 @@
 PODS:
+  - Alamofire (4.0.1)
   - BEMCheckBox (1.2.1)
 
 DEPENDENCIES:
+  - Alamofire
   - BEMCheckBox
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   BEMCheckBox: 264b8b72aa92adbfefa265cc58a0cdb86b207b9f
 
-PODFILE CHECKSUM: 8c9ddf0998f87f89083aa68453cbb2a7b14a6039
+PODFILE CHECKSUM: e1cddd8c42a626772a2e4cc33ccf95a96125bc77
 
 COCOAPODS: 1.1.1

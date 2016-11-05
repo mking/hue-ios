@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Pattern" syncable="YES">
+        <relationship name="songs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Song" inverseName="pattern" inverseEntity="Song" syncable="YES"/>
+    </entity>
+    <entity name="Song" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="pattern" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pattern" inverseName="songs" inverseEntity="Pattern" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pattern" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Song" positionX="-54" positionY="0" width="128" height="75"/>
+    </elements>
+</model>

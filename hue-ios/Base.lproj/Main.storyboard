@@ -108,12 +108,43 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="aXa-GG-BTH" kind="relationship" relationship="rootViewController" id="HlQ-rZ-EaH"/>
+                        <segue destination="zJr-2o-9er" kind="relationship" relationship="rootViewController" id="0eK-zs-vIO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pI-g9-cXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3097" y="-745"/>
+            <point key="canvasLocation" x="-4799" y="-734"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="MgM-KI-KfE">
+            <objects>
+                <viewController id="zJr-2o-9er" customClass="WelcomeViewController" customModule="hue_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JXW-OK-D4Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="rMU-Jm-eOi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xjt-Ly-Cls">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-p1-DtS">
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="findBridges:" destination="zJr-2o-9er" eventType="touchUpInside" id="9Bq-b1-K8p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jGk-p1-DtS" firstAttribute="centerX" secondItem="xjt-Ly-Cls" secondAttribute="centerX" id="Fxf-Fl-yh5"/>
+                            <constraint firstItem="jGk-p1-DtS" firstAttribute="centerY" secondItem="xjt-Ly-Cls" secondAttribute="centerY" id="sdM-PC-k7H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4vq-PG-Wbr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zli-Mk-hhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3791.1999999999998" y="-734.48275862068976"/>
         </scene>
         <!--Music List-->
         <scene sceneID="840-OF-7oB">
@@ -146,10 +177,10 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicListTableViewCell" rowHeight="44" id="1dh-3S-fO3" customClass="MusicListTableViewCell" customModule="hue_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="300" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1dh-3S-fO3" id="5St-4Z-NO8">
-                                                    <frame key="frameInset" width="1000" height="43"/>
+                                                    <frame key="frameInset" width="300" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="center" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Eoj-Da-rNb">
